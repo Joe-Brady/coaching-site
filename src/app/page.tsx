@@ -63,6 +63,45 @@ export default function Home() {
       <main className={styles.maxWidthParent}>
         <div className={styles.maxWidthChild}>
           <div className={styles.profileAndSummaryGrid}>
+            <div className={styles.summaryInfoGrid}>
+              <SummaryInfo
+                titleIcon={{
+                  src: "/code-editor.svg",
+                  alt: "Code editor icon",
+                }}
+                titleText="Learn how to code. Properly."
+                bodyLines={[
+                  "Crafting and structuring code",
+                  "Architecture and system design",
+                  "Using the latest tools and frameworks",
+                ]}
+              />
+              <SummaryInfo
+                titleIcon={{
+                  src: "/heart.svg",
+                  alt: "Heart icon",
+                }}
+                titleText="Get a job that you love."
+                bodyLines={[
+                  "Finding opportunities",
+                  "Acing interviews",
+                  "Navigating career paths",
+                ]}
+              />
+              <SummaryInfo
+                titleIcon={{
+                  src: "/plant-vase.svg",
+                  alt: "Plant vase icon",
+                }}
+                titleText="Hone your craft."
+                bodyLines={[
+                  "Move faster with continuous mentoring",
+                  "Receive code reviews and feedback",
+                  "Learn more valuable skills",
+                ]}
+              />
+            </div>
+
             <div className={styles.profile}>
               <Card>
                 <h2 className="mb4">Hi!</h2>
@@ -103,45 +142,6 @@ export default function Home() {
                   <LinkButton href="#apply-now">{"Apply now"}</LinkButton>
                 </div>
               </Card>
-            </div>
-
-            <div className={styles.summaryInfoGrid}>
-              <SummaryInfo
-                titleIcon={{
-                  src: "/code-editor.svg",
-                  alt: "Code editor icon",
-                }}
-                titleText="Learn how to code. Properly."
-                bodyLines={[
-                  "Crafting and structuring code",
-                  "Architecture and system design",
-                  "Using the latest tools and frameworks",
-                ]}
-              />
-              <SummaryInfo
-                titleIcon={{
-                  src: "/heart.svg",
-                  alt: "Heart icon",
-                }}
-                titleText="Get a job that you love."
-                bodyLines={[
-                  "Finding opportunities",
-                  "Acing interviews",
-                  "Navigating career paths",
-                ]}
-              />
-              <SummaryInfo
-                titleIcon={{
-                  src: "/plant-vase.svg",
-                  alt: "Plant vase icon",
-                }}
-                titleText="Hone your craft."
-                bodyLines={[
-                  "Move faster with continuous mentoring",
-                  "Receive code reviews and feedback",
-                  "Learn more valuable skills",
-                ]}
-              />
             </div>
           </div>
         </div>
