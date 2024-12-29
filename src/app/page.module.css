@@ -1,7 +1,3 @@
-.page {
-
-}
-
 .maxWidthParent {
   margin: 0 2rem;
 }
@@ -12,9 +8,12 @@
 }
 
 .hero {
-  padding: 8rem 0;
+  padding: 8rem 0 16rem 0;
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1fr;
+  grid-gap: 4rem;
+  align-items: center;
+  margin-bottom: 8rem;
 }
 
 .heroTitle {
@@ -34,8 +33,27 @@
   }
 }
 
-.main {
+
+.summaryInfoGrid {
+  display: grid;
+  grid-auto-flow: row;
+  grid-gap: 10rem;
 }
 
 .footer {
+}
+
+
+@media (min-width: 768px) {
+  .hero {
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .heroCallToActionContainer {
+    align-items: flex-end;
+  }
+
+  .maxWidthParent {
+    margin: 0 4rem;
+  }
 }

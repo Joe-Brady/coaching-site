@@ -46,6 +46,10 @@
   }
 }
 
+.gradient {
+  position: relative;
+}
+
 .gradient::before {
     content: "";
     position: absolute;
@@ -55,7 +59,6 @@
     height: 100%;
     z-index: -1;
     background: radial-gradient(#ffca57d2 23%, rgba(255, 255, 255,  0) 70% 100%) var(--positionZeroX) var(--positionZeroY),radial-gradient(#ff7e33 0, rgba(255, 51, 61,  var(--opacityOne)) 60% 100%) -940px 290px,radial-gradient(#90e0ff 10%, rgba(144, 224, 255,  var(--opacityTwo)) 60% 100%) -120px 250px,radial-gradient(#ff7e33 40%,rgba(255, 51, 61,  var(--opacityOne)) 57% 100%) 495px -44px,radial-gradient(#60cdee 30%,rgba(169, 96, 238, var(--opacityZero)) 67% 100%) 122px -120px,radial-gradient(#60cdee 10%,rgba(169, 96, 238, var(--opacityZero)) 60% 100%) -420px 120px,radial-gradient(#90e0ff 15%,rgba(144, 224, 255,  var(--opacityTwo)) 50% 100%) -620px 0,radial-gradient(#90e0ff 25%,rgba(144, 224, 255,  var(--opacityTwo)) 50% 100%) 520px -250px,#60cdee;
-    /* background-color: rgb(216, 195, 157); */
     animation: glow 20s ease-in-out infinite;
     clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
   }
