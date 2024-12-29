@@ -26,7 +26,7 @@ export const SummaryInfo = ({ titleIcon, titleText, bodyLines }: Props) => {
         {bodyLines.map((bodyLine, index) => (
           <p
             key={`summaryInfoBodyLine-${index}`}
-            className={`h4 ${styles.bodyLine}`}
+            className={`m ${styles.bodyLine}`}
           >
             {bodyLine}
           </p>

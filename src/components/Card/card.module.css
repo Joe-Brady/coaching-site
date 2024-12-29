@@ -1,0 +1,12 @@
+.card {
+  border-radius: 2rem;
+  box-shadow: var(--float-shadow);
+  padding: 2rem;
+}
+
+
+@media (min-width: 768px) {
+  .card {
+    padding: 4rem;
+  }
+}

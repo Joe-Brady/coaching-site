@@ -14,6 +14,7 @@
   grid-gap: 4rem;
   align-items: center;
   margin-bottom: 8rem;
+  position: relative;
 }
 
 .heroTitle {
@@ -27,22 +28,60 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 1rem;
-
-  a {
-    margin-top: 2rem;
-  }
 }
 
+.heroCallToActionContainer a {
+  margin-top: 2rem;
+}
+
+.profileImage {
+  position: absolute;
+  bottom: -2rem;
+  right: 0;
+  background-color: var(--black);
+  border-radius: 50%;
+  width: 20rem;
+  height: 20rem;
+  box-shadow: var(--float-shadow);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profileAndSummaryGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 4rem;
+  align-items: flex-start;
+}
+
+.profile {
+  order: 1;
+  max-width: 80rem;
+}
 
 .summaryInfoGrid {
   display: grid;
   grid-auto-flow: row;
   grid-gap: 10rem;
+  order: 2;
+}
+
+.bottomCallToAction {
+  margin-top: 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .footer {
+  background-color: var(--magenta);
+  color: var(--white);
+  text-align: center;
+  margin-top: 8rem;
+  padding: 4rem;
 }
-
 
 @media (min-width: 768px) {
   .hero {
@@ -55,5 +94,20 @@
 
   .maxWidthParent {
     margin: 0 4rem;
+  }
+}
+
+@media (min-width: 1080px) {
+  .profileAndSummaryGrid {
+    grid-template-columns: 1fr 50rem;
+  }
+
+  .profile {
+    order: 2;
+    max-width: unset;
+  }
+
+  .summaryInfoGrid {
+    order: 1;
   }
 }
