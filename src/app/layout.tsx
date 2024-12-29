@@ -6,9 +6,9 @@ const inter = Inter({ subsets: ["latin"] });
 
 
 export const metadata: Metadata = {
-  title: "Become a skilled software engineer",
+  title: "Web Software Engineer Career Kickstart",
   description:
-    "Learn how to write code properly from Joe Brady, a full-time Principal Software Engineer.",
+    "Learn how to write code properly and kick-start your career as a software engineer with one-to-one tailored coaching.",
 };
 
 export default function RootLayout({

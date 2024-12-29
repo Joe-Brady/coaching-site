@@ -2,11 +2,11 @@ import Image from "next/image";
 import styles from "./page.module.css";
 import { LinkButton } from "@/components/LinkButton/LinkButton";
 import { TagText } from "@/components/TagText/TagText";
-import { ImageAndText } from "@/components/ImageAndText/ImageAndText";
 import { MulticolourSplash } from "@/components/MulticolourSplash/MulticolourSplash";
 import { SummaryInfo } from "@/components/SummaryInfo/SummaryInfo";
 import { Card } from "@/components/Card/Card";
 import { Button } from "@/components/Button/Button";
+import { ImageAndText } from "@/components/ImageAndText/ImageAndText";
 
 export default function Home() {
   return (
@@ -15,26 +15,25 @@ export default function Home() {
         <div className={styles.maxWidthParent}>
           <div className={`${styles.maxWidthChild} ${styles.hero}`}>
             <div>
-              <span className="h3">{"2025 intake"}</span>
               <ImageAndText
-                className={styles.heroTitle}
                 image={
                   <Image
                     src="/engineering.svg"
                     alt="Engineering icon"
-                    width={100}
-                    height={100}
+                    width={40}
+                    height={40}
                     priority
                   />
                 }
-                text={
-                  <h1>
-                    {"Web Software Engineer"}
-                    <br />
-                    {"Career Kickstart"}
-                  </h1>
-                }
+                text={<span className="h3">{"2025 intake"}</span>}
               />
+
+              <h1 className={styles.heroTitle}>
+                {"Web Software Engineer"}
+                <br />
+                {"Career Kickstart"}
+              </h1>
+
               <p className="h3">
                 {"Personal coaching with Joe Brady,"}
                 <br />
