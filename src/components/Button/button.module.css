@@ -1,0 +1,13 @@
+.button {
+  border-radius: 0;
+  padding: 2rem 4rem;
+  background-color: var(--magenta);
+  color: var(--white);
+  box-shadow: var(--float-shadow);
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--magentaBright);
+  }
+}

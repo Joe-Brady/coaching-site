@@ -6,6 +6,7 @@ import { ImageAndText } from "@/components/ImageAndText/ImageAndText";
 import { MulticolourSplash } from "@/components/MulticolourSplash/MulticolourSplash";
 import { SummaryInfo } from "@/components/SummaryInfo/SummaryInfo";
 import { Card } from "@/components/Card/Card";
+import { Button } from "@/components/Button/Button";
 
 export default function Home() {
   return (
@@ -44,7 +45,7 @@ export default function Home() {
               <TagText>{"3 places available"}</TagText>
               <TagText>{"Applications close soon"}</TagText>
               <TagText>{"Free consultation"}</TagText>
-              <LinkButton href="#">{"Apply now"}</LinkButton>
+              <LinkButton href="#apply-now">{"Apply now"}</LinkButton>
             </div>
 
             <div className={styles.profileImage}>
@@ -65,10 +66,10 @@ export default function Home() {
           <div className={styles.profileAndSummaryGrid}>
             <div className={styles.profile}>
               <Card>
-                <h2>Hi!</h2>
+                <h2 className="mb4">Hi!</h2>
                 <p>
                   {
-                    "I'm Joe, a Principal Software Engineer specialising in web tech."
+                    "I'm Joe, a Principal Software Engineer specialising in web tech (Typescript, React, NodeJS, web infrastructure and databases)."
                   }
                 </p>
                 <p>
@@ -90,12 +91,18 @@ export default function Home() {
                   }
                 </p>
                 <p>
-                  {
-                    "Apply now to get a free no-commitment initial consultation to discuss your personal requirements."
-                  }
+                  {"Apply now to get a "}
+                  <span className="bold">
+                    {"free, no-commitment initial consultation"}
+                  </span>
+                  {" to discuss your personal requirements."}
                 </p>
                 <p>{"I look forward to hearing from you!"}</p>
                 <p>{"Joe"}</p>
+
+                <div className="mt4">
+                  <LinkButton href="#apply-now">{"Apply now"}</LinkButton>
+                </div>
               </Card>
             </div>
 
@@ -140,8 +147,31 @@ export default function Home() {
           </div>
         </div>
 
-        <div className={styles.bottomCallToAction}>
-          <LinkButton href="#">{"Apply now"}</LinkButton>
+        <div className={styles.formContainer}>
+          <h1 id="apply-now">Apply now</h1>
+          <form className={styles.form}>
+            <label>
+              {"Name"}
+              <input type="text" />
+            </label>
+            <label>
+              {"Email address"}
+              <input type="text" />
+            </label>
+            <label>
+              {"Phone number (optional)"}
+              <input type="text" />
+            </label>
+            <label>
+              {"Message"}
+              <textarea
+                rows={10}
+                placeholder={`E.g. "I am looking for my first job in the industry. So far I have attended a bootcamp and want to refine my skills."`}
+              />
+            </label>
+
+            <Button type="submit">Submit</Button>
+          </form>
         </div>
       </main>
 

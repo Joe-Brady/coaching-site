@@ -68,11 +68,36 @@
   order: 2;
 }
 
-.bottomCallToAction {
+.formContainer {
   margin-top: 8rem;
   display: flex;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 50rem;
+  margin: 2rem 0;
+  gap: 2rem;
+}
+
+.form label {
+  display: flex;
+  flex-direction: column;
+  font-size: 2.5rem;
+}
+
+.form input, .form textarea {
+  margin-top: 1rem;
+  border: 3px solid var(--magenta);
+  padding: 1rem;
+}
+
+.form button {
+  justify-self: flex-end;
 }
 
 .footer {
