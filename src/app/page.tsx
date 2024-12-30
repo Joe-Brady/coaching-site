@@ -7,6 +7,7 @@ import { SummaryInfo } from "@/components/SummaryInfo/SummaryInfo";
 import { Card } from "@/components/Card/Card";
 import { Button } from "@/components/Button/Button";
 import { ImageAndText } from "@/components/ImageAndText/ImageAndText";
+import { LogoStrip } from "@/components/LogoStrip/LogoStrip";
 
 export default function Home() {
   return (
@@ -62,6 +63,10 @@ export default function Home() {
 
       <main className={styles.maxWidthParent}>
         <div className={styles.maxWidthChild}>
+          <div className={styles.logoStripContainer}>
+            <LogoStrip />
+          </div>
+
           <div className={styles.profileAndSummaryGrid}>
             <div className={styles.summaryInfoGrid}>
               <SummaryInfo

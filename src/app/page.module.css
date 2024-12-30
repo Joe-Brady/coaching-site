@@ -48,6 +48,10 @@
   align-items: center;
 }
 
+.logoStripContainer {
+  margin: 12rem 0;
+}
+
 .profileAndSummaryGrid {
   display: grid;
   grid-template-columns: 1fr;
