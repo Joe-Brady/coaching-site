@@ -90,7 +90,7 @@ export default function Home() {
                 bodyLines={[
                   "Finding opportunities",
                   "Acing interviews",
-                  "Navigating career paths",
+                  "Negotiating a great salary",
                 ]}
               />
               <SummaryInfo
@@ -153,22 +153,28 @@ export default function Home() {
 
         <div className={styles.formContainer}>
           <h1 id="apply-now">Apply now</h1>
-          <form className={styles.form}>
+          <form
+            className={styles.form}
+            name="application"
+            method="POST"
+            data-netlify="true"
+          >
             <label>
               {"Name"}
-              <input type="text" />
+              <input type="text" name="name" />
             </label>
             <label>
               {"Email address"}
-              <input type="text" />
+              <input type="text" name="email" />
             </label>
             <label>
               {"Phone number (optional)"}
-              <input type="text" />
+              <input type="text" name="phone" />
             </label>
             <label>
               {"Message"}
               <textarea
+                name="message"
                 rows={10}
                 placeholder={`E.g. "I am looking for my first job in the industry. So far I have attended a bootcamp and want to refine my skills."`}
               />
