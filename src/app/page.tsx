@@ -5,9 +5,9 @@ import { TagText } from "@/components/TagText/TagText";
 import { MulticolourSplash } from "@/components/MulticolourSplash/MulticolourSplash";
 import { SummaryInfo } from "@/components/SummaryInfo/SummaryInfo";
 import { Card } from "@/components/Card/Card";
-import { Button } from "@/components/Button/Button";
 import { ImageAndText } from "@/components/ImageAndText/ImageAndText";
 import { LogoStrip } from "@/components/LogoStrip/LogoStrip";
+import { ApplicationForm } from "@/components/ApplicationForm/ApplicationForm";
 
 export default function Home() {
   return (
@@ -151,40 +151,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className={styles.formContainer}>
-          <h1 id="apply-now">Apply now</h1>
-          <form
-            className={styles.form}
-            name="application"
-            method="POST"
-            data-netlify="true"
-          >
-            <label>
-              {"Name"}
-              <input type="text" name="name" />
-            </label>
-            <label>
-              {"Email address"}
-              <input type="text" name="email" />
-            </label>
-            <label>
-              {"Phone number (optional)"}
-              <input type="text" name="phone" />
-            </label>
-            <label>
-              {"Message"}
-              <textarea
-                name="message"
-                rows={10}
-                placeholder={`E.g. "I am looking for my first job in the industry. So far I have attended a bootcamp and want to refine my skills."`}
-              />
-            </label>
-
-            <Button type="submit">Submit</Button>
-          </form>
-
-          {/* <table></table> */}
-        </div>
+        <ApplicationForm />
       </main>
 
       <footer className={styles.footer}>
