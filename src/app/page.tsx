@@ -30,15 +30,13 @@ export default function Home() {
               />
 
               <h1 className={styles.heroTitle}>
-                {"Web Software Engineer"}
-                <br />
-                {"Career Kickstart"}
+                {"Land your dream tech job."}
               </h1>
 
               <p className="h3">
-                {"Personal coaching with Joe Brady,"}
-                <br />
-                {"Principal Software Engineer"}
+                {
+                  "Expert mentoring and technical tuition to fast-track your career as a web software engineer."
+                }
               </p>
             </div>
             <div className={styles.heroCallToActionContainer}>
@@ -48,14 +46,23 @@ export default function Home() {
               <LinkButton href="#apply-now">{"Apply now"}</LinkButton>
             </div>
 
-            <div className={styles.profileImage}>
-              <Image
-                src="/joe-headshot.webp"
-                alt="Photo of Joe"
-                width={160}
-                height={160}
-                priority
-              />
+            <div className={styles.profileImageContainer}>
+              <small className="italic">
+                <span className="italic small bold">{"Joe Brady"}</span>
+                <br />
+                {"Principal Software Engineer"}
+                <br />
+                {"and personal mentor"}
+              </small>
+              <div className={styles.profileImage}>
+                <Image
+                  src="/joe-headshot.webp"
+                  alt="Photo of Joe"
+                  width={160}
+                  height={160}
+                  priority
+                />
+              </div>
             </div>
           </div>
         </div>

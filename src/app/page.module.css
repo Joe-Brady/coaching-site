@@ -33,11 +33,18 @@
   margin-top: 2rem;
 }
 
-.profileImage {
+.profileImageContainer {
   position: absolute;
   bottom: -2rem;
   right: 0;
-  background-color: var(--black);
+  display: flex;
+  align-items: flex-end;
+  text-align: end;
+  gap: 1rem;
+}
+
+.profileImage {
+  background-color: var(--white);
   border-radius: 50%;
   width: 20rem;
   height: 20rem;

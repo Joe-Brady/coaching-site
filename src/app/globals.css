@@ -77,12 +77,16 @@ p, .p {
   margin: 1.5rem 0;
 }
 
-small {
+small, .small {
   font-size: 1.5rem;
 }
 
 .bold {
   font-weight: 700;
+}
+
+.italic {
+  font-style: italic;
 }
 
 .mt1 {
