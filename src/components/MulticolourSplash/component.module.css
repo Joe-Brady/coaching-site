@@ -1,64 +1,13 @@
-@property --opacityZero {
-  syntax: "<number>";
-  initial-value: 1;
-  inherits: false;
-}
-
-@property --opacityOne {
-  syntax: "<number>";
-  initial-value: 0.25;
-  inherits: false;
-}
-
-@property --opacityTwo {
-  syntax: "<number>";
-  initial-value: 0.5;
-  inherits: false;
-}
-
-@property --positionZeroX {
-  syntax: "<length>";
-  initial-value: 500px;
-  inherits: false;
-}
-
-@property --positionZeroY {
-  syntax: "<length>";
-  initial-value: 250px;
-  inherits: false;
-}
-
-@keyframes glow {
-  0%,100% {
-    --opacityZero: 0;
-    --opacityOne: 0.25;
-    --opacityTwo: 0.5;
-    --positionZeroX: 500px;
-    --positionZeroY: 250px;
-  }
-  
-  50% {
-    --opacityZero: 1;
-    --opacityOne: 0.5;
-    --opacityTwo: 0.25;
-    --positionZeroX: 800px;
-    --positionZeroY: 0px;
-  }
-}
-
-.gradient {
+.splashContainer {
   position: relative;
 }
 
-.gradient::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100%;
-    z-index: -1;
-    background: radial-gradient(#ffca57d2 23%, rgba(255, 255, 255,  0) 70% 100%) var(--positionZeroX) var(--positionZeroY),radial-gradient(#ff7e33 0, rgba(255, 51, 61,  var(--opacityOne)) 60% 100%) -940px 290px,radial-gradient(#90e0ff 10%, rgba(144, 224, 255,  var(--opacityTwo)) 60% 100%) -120px 250px,radial-gradient(#ff7e33 40%,rgba(255, 51, 61,  var(--opacityOne)) 57% 100%) 495px -44px,radial-gradient(#60cdee 30%,rgba(169, 96, 238, var(--opacityZero)) 67% 100%) 122px -120px,radial-gradient(#60cdee 10%,rgba(169, 96, 238, var(--opacityZero)) 60% 100%) -420px 120px,radial-gradient(#90e0ff 15%,rgba(144, 224, 255,  var(--opacityTwo)) 50% 100%) -620px 0,radial-gradient(#90e0ff 25%,rgba(144, 224, 255,  var(--opacityTwo)) 50% 100%) 520px -250px,#60cdee;
-    animation: glow 20s ease-in-out infinite;
-    clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
-  }
+.gradient {
+  position: absolute;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
+  width: 100vw;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
