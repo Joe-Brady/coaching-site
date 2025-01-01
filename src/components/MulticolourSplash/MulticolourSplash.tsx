@@ -10,7 +10,7 @@ export const MulticolourSplash = ({ children }: Props) => {
   return (
     <div className={styles.splashContainer}>
       <div className={styles.gradient}>
-        <Image src="/splash.avif" alt="Colour splash" fill />;
+        <Image src="/splash.avif" alt="Colour splash" fill priority />;
       </div>
       {children}
     </div>
