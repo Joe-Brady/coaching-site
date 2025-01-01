@@ -1,10 +1,10 @@
 "use client";
 
 import { Button } from "@/components/Button/Button";
-import styles from "./application-form.module.css";
 import { sendGAEvent } from "@next/third-parties/google";
-import { useState } from "react";
 import Image from "next/image";
+import { useState } from "react";
+import styles from "./application-form.module.css";
 
 export function ApplicationForm() {
   const [isSubmitPending, setIsSubmitPending] = useState(false);
@@ -30,6 +30,8 @@ export function ApplicationForm() {
 
     setSubmitted(true);
     setIsSubmitPending(false);
+
+    history.pushState(null, "", "/application-success");
   };
 
   return (
