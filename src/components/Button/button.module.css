@@ -11,3 +11,7 @@
     background-color: var(--magentaBright);
   }
 }
+
+.button:disabled {
+  background-color: var(--grey);
+}
