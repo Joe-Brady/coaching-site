@@ -57,7 +57,7 @@ export default function Home() {
               <div className={styles.profileImage}>
                 <Image
                   src="/joe-headshot.webp"
-                  alt="Photo of Joe"
+                  alt="Photo of Joe!"
                   width={160}
                   height={160}
                   priority
