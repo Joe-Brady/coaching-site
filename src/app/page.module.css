@@ -8,7 +8,7 @@
 }
 
 .hero {
-  padding: 8rem 0 16rem 0;
+  padding: 3rem 0 16rem 0;
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 4rem;
@@ -79,6 +79,7 @@
 
 @media (min-width: 768px) {
   .hero {
+    padding-top: 4rem;
     grid-template-columns: 2fr 1fr;
   }
 
