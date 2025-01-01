@@ -34,7 +34,6 @@ export function ApplicationForm() {
 
   return (
     <div className={styles.formContainer}>
-      <h1 id="apply-now">Apply now</h1>
       {submitted ? (
         <div className={styles.success}>
           <Image src="/tick.svg" alt="Success tick" width={80} height={80} />
@@ -42,37 +41,40 @@ export function ApplicationForm() {
           <p>Thank you for your interest! I will be in touch soon.</p>
         </div>
       ) : (
-        <form
-          className={styles.form}
-          name="application"
-          onSubmit={handleFormSubmit}
-        >
-          <input type="hidden" name="form-name" value="application" />
-          <label>
-            {"Name"}
-            <input type="text" name="name" required />
-          </label>
-          <label>
-            {"Email address"}
-            <input type="text" name="email" required />
-          </label>
-          <label>
-            {"Phone number (optional)"}
-            <input type="text" name="phone" />
-          </label>
-          <label>
-            {"Message"}
-            <textarea
-              name="message"
-              rows={10}
-              placeholder={`E.g. "I am looking for my first job in the industry. So far I have attended a bootcamp and want to refine my skills."`}
-            />
-          </label>
+        <>
+          <h1 id="apply-now">Apply now</h1>
+          <form
+            className={styles.form}
+            name="application"
+            onSubmit={handleFormSubmit}
+          >
+            <input type="hidden" name="form-name" value="application" />
+            <label>
+              {"Name"}
+              <input type="text" name="name" required />
+            </label>
+            <label>
+              {"Email address"}
+              <input type="text" name="email" required />
+            </label>
+            <label>
+              {"Phone number (optional)"}
+              <input type="text" name="phone" />
+            </label>
+            <label>
+              {"Message"}
+              <textarea
+                name="message"
+                rows={10}
+                placeholder={`E.g. "I am looking for my first job in the industry. So far I have attended a bootcamp and want to refine my skills."`}
+              />
+            </label>
 
-          <Button type="submit" disabled={isSubmitPending}>
-            Submit
-          </Button>
-        </form>
+            <Button type="submit" disabled={isSubmitPending}>
+              Submit
+            </Button>
+          </form>
+        </>
       )}
     </div>
   );
