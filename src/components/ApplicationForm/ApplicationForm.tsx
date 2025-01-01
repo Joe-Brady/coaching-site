@@ -20,7 +20,7 @@ export function ApplicationForm() {
     );
     const body = new URLSearchParams(formEntries).toString();
 
-    sendGAEvent("event", "applictionSubmitted", formData);
+    sendGAEvent("event", "appliction_submitted", formData);
 
     await fetch("/__forms.html", {
       method: "POST",
