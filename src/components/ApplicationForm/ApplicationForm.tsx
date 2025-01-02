@@ -44,7 +44,7 @@ export function ApplicationForm() {
         </div>
       ) : (
         <>
-          <h1 id="apply-now">Apply now</h1>
+          <h2 id="apply-now">Apply now</h2>
           <form
             className={styles.form}
             name="application"

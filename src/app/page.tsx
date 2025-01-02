@@ -30,7 +30,7 @@ export default function Home() {
               />
 
               <h1 className={styles.heroTitle}>
-                {"Land your dream tech job."}
+                {"Land your dream job in tech."}
               </h1>
 
               <p className="h3">
