@@ -45,6 +45,7 @@ export function ApplicationForm() {
       ) : (
         <>
           <h2 id="apply-now">Apply now</h2>
+          <p>Applications for the 2025 intake close on 31st January 2025.</p>
           <form
             className={styles.form}
             name="application"
