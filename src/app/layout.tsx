@@ -8,7 +8,7 @@ import { Suspense } from "react";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Web Software Engineer Career Kickstart",
+  title: "Expert technical mentoring and tuition",
   description:
     "Learn how to write code properly and kick-start your career as a software engineer with one-to-one tailored coaching.",
 };
